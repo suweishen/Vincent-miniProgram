@@ -1,0 +1,244 @@
+/* 隐藏滚动条 */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.page-top {
+  position: fixed;
+  z-index: 3;
+  height: 105rpx;
+  width: 750rpx;
+  position: fixed;
+  top: 0;
+  background-color: #00bcd4;
+  box-shadow: -2rpx 0rpx 10rpx 0 #f1f1f1;
+  .icon-container {
+    display: flex;
+    margin: 10rpx 20rpx 0 20rpx;
+    justify-content: center;
+    align-items: center;
+    .icon-detail {
+      display: block;
+      position: absolute;
+      left: 20rpx;
+      top: 20rpx;
+      .icon-desc {
+        margin-top: -10rpx;
+        margin-left: 5rpx;
+        font-size: 20rpx;
+        color: #fff;
+      }
+    }
+  }
+  .search-container {
+    margin-top: 10rpx;
+    margin-left: 10rpx;
+    .search-desc {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: -15rpx;
+    }
+  }
+}
+.page-middle {
+  margin-top: 75rpx;
+  width: 750rpx;
+  overflow: hidden;
+  padding-bottom: 120rpx;
+  .hotSearch-container {
+    width: 100%;
+    height: 35rpx;
+    padding-top: 50rpx;
+    padding-bottom: 20rpx;
+    .txt-center {
+      text-align: center;
+      background: #0392a5;
+    }
+  }
+}
+.hotSearch-background {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 200rpx;
+  color: #fff;
+  background: linear-gradient(to left, #00bcd4 0%, #03c1df 25%, #0392a5 100%);
+}
+.hotSearch-background:after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -100rpx;
+  z-index: -1;
+  content: ' ';
+  height: 200rpx;
+  width: 100%;
+  border-radius: 0 0 40% 40%;
+  background: linear-gradient(to left, #00bcd4 0%, #03c1df 25%, #0392a5 100%);
+}
+.swiper {
+  margin: 0 20rpx;
+  margin-top: -80rpx;
+  border-radius: 20rpx;
+  overflow: hidden;
+  .slide-image {
+    border-radius: 20rpx;
+  }
+}
+.img-class {
+  display: flex;
+  justify-content: center;
+  margin-left: 55rpx;
+  height: 80rpx;
+  width: 80rpx;
+  .image-class {
+    display: flex;
+    justify-content: center;
+  }
+}
+.switch {
+  z-index: 1;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+image {
+  height: 100%;
+  width: 100%;
+}
+
+.message {
+  color: red;
+  padding: 10px;
+  text-align: center;
+}
+.badge {
+    position: relative;
+    left: 15rpx;
+    top: 25rpx;
+    z-index: 1;
+}
+.txt-center {
+  justify-content: center;
+  text-align: center;
+}
+.detail-container {
+  margin-top: 10rpx;
+  height: 50rpx;
+  background: #666;
+  box-shadow: -2rpx 0rpx 10rpx 0 #f1f1f1;
+  .container-desc {
+    justify-content: center;
+    margin-left: 20rpx;
+    color: #fff;
+  }
+}
+// 瀑布流布局
+.help-select-contet {
+  column-count: 2;    
+  column-gap: 4rpx;
+  width: 710rpx;
+  margin: 15rpx 20rpx 0 20rpx;
+}
+.help-select-card {
+  background: #fff;
+  width: 320rpx;
+  height: auto;
+  display: inline-block; /*内部卡片需要设置为inline-block,否则会截断显示*/
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 15rpx 10rpx;
+  .box {
+    width: 320rpx;
+    overflow: hidden;
+    padding: 5rpx;
+    border: 2rpx solid #ccc;
+    border-radius: 10rpx;
+    box-shadow: 0 0 10rpx #ccc;
+    .img-box {
+      width: 320rpx;
+      height: 320rpx;
+      .help-select-iamge {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .help-goods-title {
+      width: 320rpx;
+      padding-top: 5rpx;
+      font-size: 28rpx;
+      // color: #888;
+      line-height: 40rpx;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box; // 作为弹性伸缩盒子模型显示。
+      -webkit-box-orient: vertical; // 设置伸缩盒子的子元素排列方式--从上到下垂直排列
+      -webkit-line-clamp: 2; // 显示的行
+    }
+    .help-goods-price {
+      display: flex;
+      height: 40rpx;
+      color: red;
+      font-size: 32rpx;
+      .goods-tag {
+        float: right;
+        margin: 8rpx 0 0 20rpx;
+        opacity: 0.9;
+        font-weight: 400;
+        font-size: 18rpx;
+        height: 24rpx;
+        padding: 0 2rpx;
+        border: 0.5rpx solid #e55468;
+      }
+    }
+    .comment {
+      display: flex;
+      align-items: center;
+      height: 40rpx;
+      float: right;
+      margin-left: 10rpx;
+      font-size: 26rpx;
+      color: #999;
+    }
+  }
+}
+.recommend { 
+  margin: 10rpx auto; 
+  white-space: nowrap; 
+  .note { 
+  font-size: 70%; 
+  color: #858585; 
+  margin-left: 25rpx; 
+  } 
+  .recommend_item { 
+  position: relative; 
+  display: inline-block; 
+  height: 120rpx; 
+  width: 180rpx; 
+  margin: 8rpx 14rpx; 
+  margin-left: 5rpx; 
+  box-shadow: 0 0 5rpx #858585; 
+  padding: 10rpx; 
+  border-radius: 14rpx; 
+  .title { 
+  font-size: 80%; 
+  } 
+  .storeNum { 
+  margin-top: 5rpx; 
+  font-size: 60%; 
+  } 
+  .bg { 
+  position: absolute; 
+  right: 0; 
+  bottom: 0; 
+  height: 80rpx; 
+  width: 100rpx; 
+  z-index: -1; 
+  } 
+  } 
+  .recommend_item:nth-child(1) { 
+  margin-left: 25rpx; 
+  } 
+  }

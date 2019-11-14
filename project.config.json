@@ -1,0 +1,176 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"nodeModules": true
+	},
+	"miniprogramRoot": "dist/wx/",
+	"compileType": "miniprogram",
+	"appid": "wxd589df3753608247",
+	"projectname": "mpvue_bookmall",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"libVersion": "2.7.5",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 17,
+			"list": [
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/profile/profile-detail/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "商品详情",
+					"pathName": "pages/product/detail/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "账号管理",
+					"pathName": "pages/profile/profile-manage/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的收货地址",
+					"pathName": "pages/profile/profile-address/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "分类",
+					"pathName": "pages/category/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "搜索",
+					"pathName": "pages/search/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "修改手机号",
+					"pathName": "pages/profile/profile-resetphone/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "建议反馈",
+					"pathName": "pages/profile/profile-suggest/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "登录",
+					"pathName": "pages/login/log/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "注册",
+					"pathName": "pages/login/register/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/index/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "确认订单",
+					"pathName": "pages/product/confirm/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 12,
+					"name": "购物车",
+					"pathName": "pages/shopping-cart/list/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "订单列表",
+					"pathName": "pages/order/list/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "发表评价",
+					"pathName": "pages/order/comment/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 15,
+					"name": "店铺",
+					"pathName": "pages/store/store-detail/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "订单详情",
+					"pathName": "pages/order/detail/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "评价详情",
+					"pathName": "pages/product/commentList/main",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

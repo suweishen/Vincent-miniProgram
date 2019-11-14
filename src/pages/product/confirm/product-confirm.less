@@ -1,0 +1,199 @@
+.page-top {
+  position: fixed;
+  z-index: 3;
+  height: 140rpx;
+  width: 750rpx;
+  position: fixed;
+  top: 0;
+  background-color: #f5f5f5;
+  box-shadow: -2rpx 0rpx 10rpx 0 #f1f1f1;
+  .contact {
+    margin: 20rpx 0 0 20rpx;
+    font-weight: 600;
+    color: #333;
+  }
+  .address {
+    margin: 20rpx 0 0 20rpx;
+    margin-top: 10rpx;
+    color: #999;
+    font-size: 26rpx;
+    width: 550rpx;
+    overflow :hidden; // 超出的文本隐藏
+    text-overflow: ellipsis; // 溢出用省略号显示
+    white-space: nowrap; // 溢出不换行
+  }
+  .click-to-add {
+    color: #999;
+    font-size: 26rpx;
+    width: 750rpx;
+    margin-top: 20rpx;
+  }
+  .txt-align {
+    text-align: center;
+  }
+  .page-top-icon {
+    position: absolute;
+    right: 20rpx;
+    top: 40rpx;
+    color: #999;
+  }
+  .page-top-image {
+    width: 750rpx;
+    height: 15rpx;
+    background: #f5f5f5;
+    .img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.page-middle {
+  padding-top: 100rpx;
+  .store-name-container {
+    padding-top: 30rpx;
+    margin-top: 20rpx;
+    .store-name {
+      display: flex;
+      height: 80rpx;
+      color: #333;
+      font-weight: 600;
+      margin-top: 20rpx;
+      line-height: 80rpx;
+      padding-left: 20rpx;
+      border-bottom: 2rpx solid #f5f5f5;
+      .store-icon {
+        display: flex;
+        align-items: center;
+        margin-right: 10rpx;
+      }
+    }
+  }
+  .card-wrapper {
+    height: 500rpx;
+    width: 100%;
+    .goods-container {
+      display: flex;
+      margin-bottom: 20rpx;
+    }
+    .goods-left {
+      width: 150rpx;
+      height: 150rpx;
+      flex-grow: 0;
+    }
+    .goods-middle {
+      flex-grow: 1;
+      margin-left: 40rpx;
+      margin-top: 20rpx;
+      .goods-title-desc {
+        width: 400rpx;
+        height: 80rpx;
+        line-height: 40rpx;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box; // 作为弹性伸缩盒子模型显示。
+        -webkit-box-orient: vertical; // 设置伸缩盒子的子元素排列方式--从上到下垂直排列
+        -webkit-line-clamp: 2; // 显示的行
+      }
+      .goods-remark {
+        margin-top: 10rpx;
+        color: #999;
+        font-size: 26rpx;
+      }
+      .price-num-container {
+        display: flex;
+        margin-top: 20rpx;
+        .goods-price {
+          color: red;
+        }
+        .stepper {
+          position: absolute;
+          right: 20rpx;
+        }
+      }
+      .tips-container {
+        display: flex;
+        margin-top: 30rpx;
+        font-size: 26rpx;
+        color: #999;
+        .warning-icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+    .express-wrapper {
+      padding: 30rpx 0 30rpx 20rpx;
+      border-top: 2rpx solid #f5f5f5;
+      .express-container {
+        display: flex;
+        .express-right {
+          position: absolute;
+          right: 20rpx;
+          font-size: 26rpx;
+        }
+      }
+      .express-container1 {
+        display: flex;
+        margin-top: 10rpx;
+        .desc-left {
+          font-size: 26rpx;
+          color: #999;
+        }
+        .desc-right {
+          position: absolute;
+          right: 20rpx;
+          font-size: 26rpx;
+          color: #999;
+        }
+      }
+    }
+    .remark {
+      border-bottom: 20rpx solid #f5f5f5;
+      margin-bottom: 20rpx;
+    }
+    .goods-picture {
+      margin-top: 20rpx;
+      margin-left: 20rpx;
+      width: 150rpx;
+      height: 150rpx;
+      border-radius: 10rpx;
+    }
+  }
+}
+
+.page-bottom {
+  .pay-wrapper {
+    padding: 50rpx 0 30rpx 20rpx;
+    border-bottom: 2rpx solid #f5f5f5;
+    .pay-container {
+      display: flex;
+      margin-top: 10rpx;
+      .pay-right {
+        position: absolute;
+        right: 20rpx;
+        color: red;
+      }
+    }
+    .pay-container1 {
+      display: flex;
+      margin-top: 10rpx;
+      .pay-right {
+        position: absolute;
+        right: 20rpx;
+        color: red;
+      }
+    }
+  }
+  .pay-amount {
+    margin-top: 40rpx;
+    display: flex;
+    position: absolute;
+    font-size: 34rpx;
+    right: 20rpx;
+    .totle-price {
+      color: red;
+    }
+  }
+}

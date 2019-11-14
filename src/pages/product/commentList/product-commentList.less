@@ -1,0 +1,61 @@
+@import '../../../asset/css/base';
+.comment-container {
+  display: flex;
+  .container-left {
+    width: 80rpx;
+    height: 80rpx;
+    flex-grow: 0;
+    .user-img {
+      width: 80rpx;
+      height: 80rpx;
+      border-radius: 50%;
+    }
+  }
+  .container-right {
+    margin-top: 10rpx;
+    margin-left: 20rpx;
+    .comment-desc {
+      margin-top: 20rpx;
+      font-size: 28rpx;
+    }
+    .comment-image-wrapper {
+      margin-top: 10rpx;
+      height: 400rpx;
+      width: 610rpx;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      // margin-left: 20rpx;
+      .image-container {
+        box-sizing: border-box;
+        overflow: hidden;
+        height: 180rpx;
+        width: 180rpx;
+        border-radius: 20rpx;
+        border: 1rpx solid #f5f5f5;
+        box-shadow: 0 0 2rpx 3rpx #f5f5f5;
+        .comment-img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+      .image-container-less3 {
+        box-sizing: border-box;
+        // overflow: hidden;
+        height: 380rpx;
+        width: 290rpx;
+        border-radius: 20rpx;
+        border: 1rpx solid #f5f5f5;
+        box-shadow: 0 0 2rpx 3rpx #f5f5f5;
+        .comment-img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+    .thumps {
+      position: absolute;
+      right: 30rpx;
+    }
+  }
+}

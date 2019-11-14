@@ -1,0 +1,102 @@
+@import '../../../asset/css/base';
+div {
+  height: 100%;
+  width: 100%;
+  // position: fixed;
+  background-color: #f5f5f5;
+}
+.page-middle {
+  margin: 20rpx;
+  border: 2rpx solid #f5f5f5;
+  box-shadow: 0 0 6rpx #ccc;
+  border-radius: 20rpx;
+  background: #fff;
+  .store-name-container {
+    .store-name {
+      display: flex;
+      height: 80rpx;
+      color: #333;
+      font-weight: 600;
+      line-height: 80rpx;
+      padding-left: 20rpx;
+      // border-bottom: 2rpx solid #f5f5f5;
+      .store-icon {
+        display: flex;
+        align-items: center;
+        margin-right: 10rpx;
+      }
+      .orderStatus {
+        position: absolute;
+        right: 40rpx;
+        color: #999;
+      }
+    }
+  }
+  .card-wrapper {
+    height: 300rpx;
+    width: 100%;
+    .goods-container {
+      display: flex;
+      margin-bottom: 20rpx;
+    }
+    .price-num-container {
+      display: flex;
+      margin: 20rpx 0 0 20rpx;
+      padding-top: 20rpx;
+      .goods-price {
+        padding-left: 40rpx;
+        color: red;
+      }
+      .stepper {
+        text-align: right;
+      }
+    }
+    .detail-btn-class {
+      margin: -10rpx 20rpx 0 0;
+      float: right;
+    }
+    .goods-left {
+      width: 150rpx;
+      height: 150rpx;
+      margin-left: 20rpx;
+      flex-grow: 0;
+      .goods-picture {
+        margin: 20rpx 0 0 20rpx;
+        width: 150rpx;
+        height: 150rpx;
+        border-radius: 10rpx;
+      }
+      .goods-tag {
+        float: right;
+        width: 50rpx;
+        opacity: 0.7;
+        background: #999;
+        position: relative;
+        top: -45rpx;
+        font-size: 24rpx;
+        text-align: center;
+        padding: 5rpx 0;
+      }
+    }
+    .goods-middle {
+      flex-grow: 1;
+      margin-left: 40rpx;
+      margin-top: 20rpx;
+      .goods-title-desc {
+        width: 400rpx;
+        height: 80rpx;
+        line-height: 40rpx;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box; // 作为弹性伸缩盒子模型显示。
+        -webkit-box-orient: vertical; // 设置伸缩盒子的子元素排列方式--从上到下垂直排列
+        -webkit-line-clamp: 2; // 显示的行
+      }
+      .goods-remark {
+        margin-top: 10rpx;
+        color: #999;
+        font-size: 26rpx;
+      }
+    }
+  }
+}
